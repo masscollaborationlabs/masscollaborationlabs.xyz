@@ -1,0 +1,14 @@
+# ChangeLog
+
+## 2026-10-17
+
+- Reworked the single-page landing page with Turkish and English content, an accessible language toggle, clearer calls to action, and a consolidated PlusClouds banner.
+- Added search description and Open Graph metadata, a theme color, and a favicon.
+- Disabled video autoplay, added playback guidance, and enabled lazy loading for the YouTube iframe.
+- Updated the responsive layout and added a visible hover and keyboard-focus color for the PlusClouds banner.
+- Added the complete AGPL-3.0-or-later notice as a source comment to project-owned HTML, JavaScript, CSS, SVG, Python, workflow, and server configuration files.
+- Generated a 240-pixel WebP display logo and a 64-pixel PNG favicon from the existing logo artwork while preserving the original SVG files. The display asset is about 96% smaller than the minified SVG.
+- Added LiteSpeed/Apache response headers in `.htaccess` for Content Security Policy, HSTS, MIME sniffing protection, framing, referrer behavior, and browser feature permissions. Documented the requirements for enabling the configuration and verifying headers after deployment.
+- Added a dependency-free Python validation script for document structure, local assets, accessibility labels, iframe loading, external-link safety, and SVG parsing.
+- Added a GitHub Actions workflow to run the site checks on pushes and pull requests.
+- Rewrote the README in US English with feature, preview, validation, hosting, license, and recent-change information.

@@ -1,0 +1,287 @@
+/*
+Website source code of Mass Collaboration Labs
+
+Copyright (C) 2026 Mass Collaboration Labs
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+:root {
+  color-scheme: light;
+  --theme-primary: #143b68;
+  --theme-secondary: #2378a8;
+  --theme-gradient: linear-gradient(155deg, var(--theme-primary), var(--theme-secondary));
+  --link-color: #2378a8;
+  --border-color: rgba(35, 120, 168, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #212529;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  color: var(--theme-primary);
+}
+
+.page {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-container {
+  width: min(100% - 2rem, 1320px);
+  margin-inline: auto;
+}
+
+.theme-bar {
+  background: var(--theme-gradient);
+  color: #fff;
+}
+
+.site-header,
+.site-footer {
+  padding: 0.75rem 0;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.site-title a,
+.site-footer a {
+  color: #fff;
+}
+
+.language-toggle {
+  padding: 0.4rem 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 0.375rem;
+  background: transparent;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.language-toggle:hover,
+.language-toggle:focus-visible {
+  background: #fff;
+  color: var(--theme-primary);
+}
+
+.site-main {
+  flex: 1;
+  margin-block: 1.5rem;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-areas:
+    "content"
+    "ad";
+  gap: 1rem;
+}
+
+.content {
+  grid-area: content;
+  min-width: 0;
+  text-align: center;
+}
+
+.sidebar-column {
+  grid-area: ad;
+}
+
+.ad-banner {
+  display: flex;
+  min-height: 280px;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  overflow: hidden;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  background: var(--theme-gradient);
+  color: #fff;
+  text-decoration: none;
+}
+
+.ad-banner:hover,
+.ad-banner:focus-visible {
+  color: #ffeb8a;
+}
+
+.ad-logo {
+  align-self: flex-start;
+  padding: 0.45rem 0.6rem;
+  border-radius: 0.4rem;
+  background: #fff;
+}
+
+.ad-logo img {
+  display: block;
+  width: 110px;
+  height: auto;
+}
+
+.ad-kicker {
+  margin: auto 0 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.ad-banner h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.ad-banner > p:not(.ad-kicker) {
+  margin: 0;
+}
+
+.ad-callout {
+  padding-top: 0.75rem;
+  border-top: 1px solid currentColor;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.brand-heading {
+  margin: 0 0 0.5rem;
+}
+
+.brand-logo {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin-inline: auto;
+}
+
+.brand-name {
+  margin: 0 0 1rem;
+}
+
+.mission-box {
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+}
+
+.mission-box p {
+  margin: 0;
+}
+
+.intro-copy {
+  margin: 1rem 0;
+}
+
+.primary-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.action-link {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--theme-primary);
+  border-radius: 0.375rem;
+  background: var(--theme-primary);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.action-link:hover,
+.action-link:focus-visible {
+  background: var(--theme-secondary);
+  color: #fff;
+}
+
+.action-link-secondary {
+  background: #fff;
+  color: var(--theme-primary);
+}
+
+.action-link-secondary:hover,
+.action-link-secondary:focus-visible {
+  background: #eef5fa;
+  color: var(--theme-primary);
+}
+
+.video-note {
+  margin: 1rem 0 0.5rem;
+  font-size: 0.9rem;
+}
+
+.video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.site-footer small {
+  font-size: 0.875em;
+}
+
+@media (min-width: 992px) {
+  .page-grid {
+    grid-template-areas: "content ad";
+    grid-template-columns: minmax(0, 4fr) minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  .sidebar-column,
+  .content {
+    min-height: 70vh;
+  }
+
+  .ad-banner {
+    height: 100%;
+  }
+}
