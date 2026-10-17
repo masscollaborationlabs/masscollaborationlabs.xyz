@@ -38,6 +38,7 @@ curl -I https://your-domain/
 ## Recent Changes
 
 - Fixed Turkish spelling ("iş birliği", "resmî", "Kaynak Kodu") and declared JavaScript files as UTF-8 in `.htaccess` so `app.js` displays Turkish characters correctly when opened directly.
+- Added a UTF-8 byte order mark to `app.js` so browsers detect the encoding even without a server-provided charset.
 - Added translated "Source Code" and "JS Code" footer links to the repository and to `app.js`.
 - Replaced the oversized display logo with a 240-pixel WebP asset and added a 64-pixel PNG favicon while preserving the original SVG sources.
 - Added lazy loading to the YouTube iframe and removed autoplay.

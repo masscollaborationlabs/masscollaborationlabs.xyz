@@ -13,5 +13,6 @@
 - Added a GitHub Actions workflow to run the site checks on pushes and pull requests.
 - Added "Source Code" and "JS Code" links to the footer, translated with the Turkish and English language toggle. The source link points to the project repository, and the JS link opens the site's `app.js` file directly in the browser.
 - Declared JavaScript files as UTF-8 in `.htaccess` so Turkish text displays correctly when `app.js` is opened directly from either language view. A live check showed the server still sent `Content-Type: text/javascript` without a charset, so the setting takes effect only after this change is deployed.
+- Added a UTF-8 byte order mark to `app.js` so browsers detect the encoding even when the server does not send a charset. The Turkish strings remain written with the Turkish alphabet (ş, ı, ğ, ö, ü, ç) rather than `\u` escapes.
 - Corrected Turkish copy: "işbirliği" is now "iş birliği", "resmi" is now "resmî", and the footer link "Kaynak Kod" is now "Kaynak Kodu".
 - Rewrote the README in US English with feature, preview, validation, hosting, license, and recent-change information.
