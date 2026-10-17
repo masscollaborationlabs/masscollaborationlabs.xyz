@@ -84,6 +84,16 @@ a:hover {
   color: #fff;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.login-link {
+  text-decoration: none;
+}
+
 .language-toggle {
   padding: 0.4rem 0.7rem;
   border: 1px solid rgba(255, 255, 255, 0.75);

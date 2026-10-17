@@ -2,6 +2,7 @@
 
 ## 2026-10-17
 
+- Added a translated "Login" ("Oturum aç") link to the left of the language toggle in the header. It points to the source code host sign-in page and returns to the site root after login.
 - Reworked the single-page landing page with Turkish and English content, an accessible language toggle, clearer calls to action, and a consolidated PlusClouds banner.
 - Added search description and Open Graph metadata, a theme color, and a favicon.
 - Disabled video autoplay, added playback guidance, and enabled lazy loading for the YouTube iframe.

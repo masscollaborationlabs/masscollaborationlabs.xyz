@@ -5,6 +5,7 @@ Source code for the Mass Collaboration Labs website, a responsive static landing
 ## Features
 
 - Responsive layout with clear links to the organization's work and YouTube channel.
+- Translated "Login" link next to the language toggle that opens the source code host sign-in page.
 - Turkish and English language toggle that updates page text, metadata, and accessibility labels.
 - Privacy-enhanced YouTube video embed with lazy loading and no autoplay.
 - Search and social sharing metadata, an SVG logo source, an optimized WebP logo, and a PNG favicon.
@@ -37,6 +38,7 @@ curl -I https://your-domain/
 
 ## Recent Changes
 
+- Added a translated "Login" ("Oturum aç") link to the left of the language toggle in the header. It points to the source code host sign-in page and returns to the site root after login.
 - Fixed Turkish spelling ("iş birliği", "resmî", "Kaynak Kodu") and declared JavaScript files as UTF-8 in `.htaccess` so `app.js` displays Turkish characters correctly when opened directly.
 - Added a UTF-8 byte order mark to `app.js` so browsers detect the encoding even without a server-provided charset.
 - Added translated "Source Code" and "JS Code" footer links to the repository and to `app.js`.
