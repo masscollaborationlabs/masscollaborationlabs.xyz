@@ -27,7 +27,7 @@ The same check runs in GitHub Actions for pushes and pull requests. It checks th
 
 ## LiteSpeed Security Headers
 
-The root `.htaccess` configures security response headers for LiteSpeed or Apache when `mod_headers` and `.htaccess` overrides are enabled for the document root. HSTS is intended for HTTPS and does not include subdomains. The Content Security Policy is also present in `index.html`; keep the two policies synchronized.
+The root `.htaccess` configures security response headers for LiteSpeed or Apache when `mod_headers` and `.htaccess` overrides are enabled for the document root. It also declares JavaScript files as UTF-8 so Turkish characters remain readable when `app.js` is opened directly. HSTS is intended for HTTPS and does not include subdomains. The Content Security Policy is also present in `index.html`; keep the two policies synchronized.
 
 After deployment, verify the response headers over HTTPS:
 
@@ -37,6 +37,7 @@ curl -I https://your-domain/
 
 ## Recent Changes
 
+- Fixed Turkish spelling ("iş birliği", "resmî", "Kaynak Kodu") and declared JavaScript files as UTF-8 in `.htaccess` so `app.js` displays Turkish characters correctly when opened directly.
 - Added translated "Source Code" and "JS Code" footer links to the repository and to `app.js`.
 - Replaced the oversized display logo with a 240-pixel WebP asset and added a 64-pixel PNG favicon while preserving the original SVG sources.
 - Added lazy loading to the YouTube iframe and removed autoplay.
