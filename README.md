@@ -38,6 +38,7 @@ curl -I https://your-domain/
 
 ## Recent Changes
 
+- Changed the "Explore our work" button (Turkish and English) to open the Forgejo Explore page at `https://source.masscollabs.xyz/explore/repos` instead of the Forgejo home page.
 - Added a translated "Login" ("Oturum aç") link to the left of the language toggle in the header. It points to the source code host sign-in page and returns to the site root after login.
 - Fixed Turkish spelling ("iş birliği", "resmî", "Kaynak Kodu") and declared JavaScript files as UTF-8 in `.htaccess` so `app.js` displays Turkish characters correctly when opened directly.
 - Added a UTF-8 byte order mark to `app.js` so browsers detect the encoding even without a server-provided charset.
