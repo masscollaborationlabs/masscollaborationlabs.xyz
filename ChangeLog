@@ -11,4 +11,5 @@
 - Added LiteSpeed/Apache response headers in `.htaccess` for Content Security Policy, HSTS, MIME sniffing protection, framing, referrer behavior, and browser feature permissions. Documented the requirements for enabling the configuration and verifying headers after deployment.
 - Added a dependency-free Python validation script for document structure, local assets, accessibility labels, iframe loading, external-link safety, and SVG parsing.
 - Added a GitHub Actions workflow to run the site checks on pushes and pull requests.
+- Added "Source Code" and "JS Code" links to the footer, translated with the Turkish and English language toggle. The source link points to the project repository, and the JS link opens the site's `app.js` file directly in the browser.
 - Rewrote the README in US English with feature, preview, validation, hosting, license, and recent-change information.

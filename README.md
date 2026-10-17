@@ -37,6 +37,7 @@ curl -I https://your-domain/
 
 ## Recent Changes
 
+- Added translated "Source Code" and "JS Code" footer links to the repository and to `app.js`.
 - Replaced the oversized display logo with a 240-pixel WebP asset and added a 64-pixel PNG favicon while preserving the original SVG sources.
 - Added lazy loading to the YouTube iframe and removed autoplay.
 - Added LiteSpeed/Apache security headers and documented the deployment requirements.
